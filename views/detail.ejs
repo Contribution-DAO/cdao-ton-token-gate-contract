@@ -1,0 +1,78 @@
+<script>
+    $(document).ready(async function () {
+        $('.joinbtn').click(function(){
+            $('#joincommu').modal('show');
+        })
+    })
+</script>
+<div class="row mt-2">
+    <div class="col-12">
+        <h3>SuiBears</h3>
+        <p class="t7">Sui Bear buidling the bear world metaverse</p>
+        <span class="t8">readmore</span>
+    </div>
+    <div class="col-12">
+       <div class="joindiv">
+           <button class="joinbtn mx-2">Join community</button>
+           <button class="reviewbtn">Write a review</button>
+       </div>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-12">
+        <img class="detailimg" src="/images/ex1.jpg">
+    </div>
+</div>
+<div class="row mt-3 maintab">
+    <div class="col-9">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="home" aria-selected="true">Reviews</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="profile" aria-selected="false">Missions</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="insight-tab" data-bs-toggle="tab" data-bs-target="#insight" type="button" role="tab" aria-controls="contact" aria-selected="false">Insights</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ecosystem-tab" data-bs-toggle="tab" data-bs-target="#ecosystem" type="button" role="tab" aria-controls="contact" aria-selected="false">Ecosystem</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="member-tab" data-bs-toggle="tab" data-bs-target="#member" type="button" role="tab" aria-controls="contact" aria-selected="false">Members</button>
+              </li>
+          </ul>
+          <div class="tab-content py-4" id="myTabContent">
+            <div class="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="review-tab">
+                <button class="reviewbtn">Write a review</button>
+                <div class="reviewinfo bg-white">
+                    test
+                </div>
+                <div class="reviewinfo bg-white">
+                    test
+                </div>
+                <div class="reviewinfo bg-white">
+                    test
+                </div>
+            </div>
+            <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                mission
+            </div>
+            <div class="tab-pane fade" id="insight" role="tabpanel" aria-labelledby="insight-tab">
+                insight
+            </div>
+            <div class="tab-pane fade" id="ecosystem" role="tabpanel" aria-labelledby="ecosystem-tab">
+                ecosystem
+            </div>
+            <div class="tab-pane fade" id="member" role="tabpanel" aria-labelledby="member-tab">
+                member
+            </div>
+          </div>
+    </div>
+    <div class="col-3">
+        <div class="partner-with-us bg-white p-3" style="border-radius: 10px;">
+            test
+        </div>
+    </div>
+</div>
+<%- include('./modal/signin'); %>
