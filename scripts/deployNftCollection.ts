@@ -6,8 +6,8 @@ export async function run(provider: NetworkProvider) {
     const nftCollection = provider.open(NftCollection.createFromConfig({
         ownerAddress: provider.sender().address as Address,
         nextItemIndex: 0,
-        collectionContent: "https://s.getgems.io/nft/b/c/62fba50217c3fe3cbaad9e7f/meta.json",
-        commonContent: "",
+        collectionContent: "https://ton-connect.contributiondao.com/collection-metadata.json",
+        commonContent: "https://ton-core.contributiondao.com/sbt/metadata/",
         nftItemCode: await compile('SbtItem'),
         royaltyParams: {
             royaltyFactor: 0,
